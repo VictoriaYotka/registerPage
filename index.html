@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <!-- <SectionAnimationWrapper> -->
+        <div class="container">
+          <form onSubmit="{onSubmit}" class="form">
+            <h2 class="header">تسجيل الدخول</h2>
+            <h4 class="subheader">
+              ليس لديك حساب؟
+
+              <a href="#" class="accent"> سجل الآن </a>
+            </h4>
+            <div class="input_wrapper">
+              <input
+                type="email"
+                name="login_email"
+                id="login_email"
+                class="input"
+                placeholder=" "
+                required
+              />
+              <label class="label" for="login_email"> البريد الإلكتروني </label>
+            </div>
+
+            <div class="input_wrapper">
+              <input
+                type="password"
+                name="login_password"
+                id="login_password"
+                class="input"
+                placeholder=" "
+                required
+              />
+              <label class="label" for="login_password">
+                إدخال كلمة السرّ
+              </label>
+            </div>
+            <a href="#/forgotpassword" class="link"> هل نسيت كلمة السرّ؟ </a>
+
+            <div class="checkbox_wrapper">
+              <input
+                type="checkbox"
+                name="login_user_agreement"
+                id="login_user_agreement"
+                class="checkbox_input"
+                required
+              />
+              <label class="checkbox_label" for="login_user_agreement">
+                بالنقر على زر الدخول تكون قد صادقت على الشروط والأحكام إضافة إلى
+                سياسة الخصوصية الخاصة بالموقع
+              </label>
+            </div>
+            <button type="submit" class="button">دخول</button>
+          </form>
+        </div>
+        <!-- </SectionAnimationWrapper> -->
+      </section>
+    </main>
+  </body>
+</html>
